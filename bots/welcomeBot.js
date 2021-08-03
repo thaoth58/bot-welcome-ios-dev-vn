@@ -34,7 +34,7 @@ class WelcomeBot extends ActivityHandler {
                     await context.sendActivity(`Welcome ${context.activity.membersAdded[idx].name} to iOS Developers VN.`);
                 }
             }
-            await context.sendActivity(`Vui lòng đọc nội quy:`);
+            await context.sendActivity(`Vui lòng đọc nội quy: https://github.com/thaoth58/bot-welcome-ios-dev-vn/blob/main/rules.txt`);
             // By calling next() you ensure that the next BotHandler is run.
             await next();
         });
